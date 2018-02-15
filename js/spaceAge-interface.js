@@ -16,4 +16,4 @@ $(document).ready(function() {
     $('#marsExpectancy').text
     $('#jupiterAge').text(jupiter)
     $('#jupiterExpectancy').text
-    $('#age').text(earth)
+    $('#age').text(earth) //ageInSeconds
