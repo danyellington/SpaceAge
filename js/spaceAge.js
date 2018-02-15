@@ -9,28 +9,34 @@ export class Age{
     this.expectancy = expectancy;
   }
 
-  function ageInSeconds(age) {
-    let ageInSeconds = this.age * 35 * 24 * 60 * 60;
+  ageInSeconds() {
+    let ageInSeconds = this.age * 365 * 24 * 60 * 60;
     return ageInSeconds;
   }
 
 
-  function getAgeMercury(age){
+  AgeMercury(){
     let mercuryAge = this.age / .24;
     return mercuryAge;
   }
 
-  function getAgeVenus(age){
+  AgeVenus(){
     let venusAge = this.age / .62;
     return venusAge;
   }
 
-  function getAgeMarss(age){
+  AgeMars(){
     let marsAge = this.age / 1.88;
     return marsAge;
   }
 
-  function getAgeJupiter(age){
+  AgeJupiter(){
     let jupiterAge = this.age / 11.86;
     return jupiterAge;
   }
+
+  expectancy(){
+    let lifeExpectancy = this.expectancy - this.age;
+    return lifeExpectancy;
+  }
+}
