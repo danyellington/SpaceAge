@@ -3,13 +3,15 @@ import { Age } from "./../assets/js/spaceAge.js";
 $(document).ready(function() {
   $('#age').submit(function(event) {
     event.preventDefault();
-    let mercury = ageMercury;
-    let venus = ageVenus;
-    let mars = ageMars;
-    let jupiter = ageJupiter;
-    let earth = age;
+    let age = new Age($('#age').val(), $('#expectancy').val());
+    let mercury = age.ageMercury();
+    let mercuryExpectancy = age.mercuryExpectancy();
+    let venus = age.ageVenus();
+    let mars = age.ageMars();
+    let jupiter = age.ageJupiter();
+    let earth = age.ageInSeconds();
     $('#mercuryAge').text(mercury)
-    $('#mercuryExpectancy').text()
+    $('#mercuryExpectancy').text(mercuryExpectancy)
     $('#venusAge').text(venus)
     $('#venusExpectancy').text()
     $('#marsAge').text(mars)

@@ -15,28 +15,35 @@ export class Age{
   }
 
 
-  AgeMercury(){
+  ageMercury(){
     let mercuryAge = this.age / .24;
-    return mercuryAge;
+    return Math.floor(mercuryAge);
   }
 
-  AgeVenus(){
+  lifeExpectancyMercury() {
+    let mercuryExpectancy = this.expectancy / .24;
+    return Math.ceil(mercuryExpectancy - this.ageMercury());
+  }
+
+  ageVenus(){
     let venusAge = this.age / .62;
     return venusAge;
   }
 
-  AgeMars(){
+  ageMars(){
     let marsAge = this.age / 1.88;
     return marsAge;
   }
 
-  AgeJupiter(){
+  ageJupiter(){
     let jupiterAge = this.age / 11.86;
     return jupiterAge;
   }
 
+
+
   expectancy(){
     let lifeExpectancy = this.expectancy - this.age;
-    return lifeExpectancy;
+    return Math.ceil(lifeExpectancy);
   }
 }
