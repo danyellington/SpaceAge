@@ -37,7 +37,7 @@ export class Age{
   }
 
   lifeExpectancyVenus() {
-    const venusExpectancy = this.expectancy / .24;
+    const venusExpectancy = this.expectancy / .62;
     return Math.ceil(venusExpectancy - this.ageVenus());
   }
 
@@ -48,7 +48,7 @@ export class Age{
   }
 
   lifeExpectancyMars() {
-    const marsExpectancy = this.expectancy / .24;
+    const marsExpectancy = this.expectancy / 1.88;
     return Math.ceil(marsExpectancy - this.ageMars());
   }
 
@@ -59,7 +59,7 @@ export class Age{
   }
 
   lifeExpectancyJupiter() {
-    const jupiterExpectancy = this.expectancy / .24;
+    const jupiterExpectancy = this.expectancy / 11.86;
     return Math.ceil(jupiterExpectancy - this.ageJupiter());
   }
 

@@ -38,4 +38,24 @@ describe('spaceAge', function() {
     let userAge = new Age("3", "5");
     expect(userAge.lifeExpectancy()).toEqual(2);
   })
+
+  it('should calculate the amount of time remaining on user life expectancy on Mercury', function() {
+    let userAge = new Age("3", "5");
+    expect(userAge.lifeExpectancyMercury()).toEqual(9);
+  })
+
+  it('should calculate the amount of time remaining on user life expectancy on Venus', function() {
+    let userAge = new Age("12", "13");
+    expect(userAge.lifeExpectancyVenus()).toEqual(2);
+  })
+
+  it('should calculate the amount of time remaining on user life expectancy on Mars', function() {
+    let userAge = new Age("12", "25");
+    expect(userAge.lifeExpectancyMars()).toEqual(8);
+  })
+
+  it('should calculate the amount of time remaining on user life expectancy on Jupiter', function() {
+    let userAge = new Age("39", "82");
+    expect(userAge.lifeExpectancyJupiter()).toEqual(4);
+  })
 });
