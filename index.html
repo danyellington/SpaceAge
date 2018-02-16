@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="build/css/vendor.css">
-    <script src="build/js/vendor.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script>
-    <link href="build/css/vendor.css" rel="stylesheet" type="text/css">
+    <script src="build/assets/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/assets/js/app.js"></script>
+    <link href="build/assets/css/vendor.min.css" rel="stylesheet" type="text/css">
+    <link href="build/assets/css/app.css" rel="stylesheet" type="text/css">
     <title>How old am I...</title>
   </head>
   <body>
-    <form id="age">
+    <form id="form">
       <div class="form-group">
-        <label for="age">Age: </label>
-        <input id="age" type="text">
+        <label for="ageInput">Age: </label>
+        <input id="ageInput" type="text">
         <label for="expectancy">How old will you be when you die? </label>
         <input id="expectancy" type="text">
         <button class="btn-success" type="submit">Submit</button>
       </div>
+    </form>
     <ol>
       <li>Earth
         <ul>
-          <li id="age">Age in seconds </li>
+          <li id="ageSeconds">Age in seconds </li>
         </ul>
       </li>
       <br>
@@ -51,6 +52,5 @@
         </ul>
       </li>
     </ol>
-    </form>
   </body>
 </html>

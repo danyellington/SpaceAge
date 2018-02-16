@@ -10,13 +10,18 @@ export class Age{
   }
 
   ageInSeconds() {
-    let ageInSeconds = this.age * 365 * 24 * 60 * 60;
+    const ageInSeconds = this.age * 365 * 24 * 60 * 60;
     return ageInSeconds;
   }
 
+  expectancy(){
+    const lifeExpectancy = this.expectancy - this.age;
+    return Math.ceil(lifeExpectancy);
+  }
 
+//Mercury
   ageMercury(){
-    let mercuryAge = this.age / .24;
+    const mercuryAge = this.age / .24;
     return Math.floor(mercuryAge);
   }
 
@@ -25,25 +30,40 @@ export class Age{
     return Math.ceil(mercuryExpectancy - this.ageMercury());
   }
 
+//Venus
   ageVenus(){
     let venusAge = this.age / .62;
-    return venusAge;
+    return Math.floor(venusAge);
   }
 
+  lifeExpectancyVenus() {
+    let venusExpectancy = this.expectancy / .24;
+    return Math.ceil(venusExpectancy - this.ageVenus());
+  }
+
+//Mars
   ageMars(){
     let marsAge = this.age / 1.88;
-    return marsAge;
+    return Math.floor(marsAge);
   }
 
+  lifeExpectancyMars() {
+    let marsExpectancy = this.expectancy / .24;
+    return Math.ceil(marsExpectancy - this.ageMars());
+  }
+
+//Jupiter
   ageJupiter(){
     let jupiterAge = this.age / 11.86;
-    return jupiterAge;
+    return Math.floor(jupiterAge);
+  }
+
+  lifeExpectancyJupiter() {
+    let jupiterExpectancy = this.expectancy / .24;
+    return Math.ceil(jupiterExpectancy - this.ageJupiter());
   }
 
 
 
-  expectancy(){
-    let lifeExpectancy = this.expectancy - this.age;
-    return Math.ceil(lifeExpectancy);
-  }
+
 }
