@@ -33,4 +33,9 @@ describe('spaceAge', function() {
     let userAge = new Age("30");
     expect(userAge.ageJupiter()).toEqual(2);
   })
+
+  // it('should calculate the amount of time remaining on user life expectancy', function() {
+  //   let userAge = new Age("3", "5");
+  //   expect(lifeExpectancy()).toEqual(2);
+  // })
 });
