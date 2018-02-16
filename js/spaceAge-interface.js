@@ -24,4 +24,4 @@ $(document).ready(function() {
     $('#jupiterExpectancy').append(jupiterExpectancy)
     $('#ageSeconds').append(earth) //ageInSeconds
   })
-})
+});
