@@ -9,10 +9,10 @@ describe('spaceAge', function() {
   });
 
 
-  // it('should return the user age in seconds', function() {
-  //   let secondsAge = ageInSeconds("1");
-  //   expect(secondsAge).toEqual("1");
-  // });
+  it('should return the user age in seconds', function() {
+    let secondsAge = new Age("1");
+    expect(secondsAge.ageInSeconds()).toEqual(31536000);
+  });
 
   it('should calculate user age on Mercury', function() {
     let userAge = new Age("12");
