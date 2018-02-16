@@ -14,14 +14,14 @@ $(document).ready(function() {
     let jupiter = age.ageJupiter();
     let jupiterExpectancy = age.jupiterExpectancy();
     let earth = age.ageInSeconds();
-    $('#mercuryAge').append(mercury)
-    $('#mercuryExpectancy').append(mercuryExpectancy)
-    $('#venusAge').append(venus)
-    $('#venusExpectancy').append(venusExpectancy)
-    $('#marsAge').append(mars)
-    $('#marsExpectancy').append(marsExpectancy)
-    $('#jupiterAge').append(jupiter)
-    $('#jupiterExpectancy').append(jupiterExpectancy)
-    $('#ageSeconds').append(earth) //ageInSeconds
+    $('#mercuryAge').append(mercury);
+    $('#mercuryExpectancy').append(mercuryExpectancy);
+    $('#venusAge').append(venus);
+    $('#venusExpectancy').append(venusExpectancy);
+    $('#marsAge').append(mars);
+    $('#marsExpectancy').append(marsExpectancy);
+    $('#jupiterAge').append(jupiter);
+    $('#jupiterExpectancy').append(jupiterExpectancy);
+    $('#ageSeconds').append(earth);//ageInSeconds
   })
 });
