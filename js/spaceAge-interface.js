@@ -2,7 +2,6 @@ import { Age } from "./../js/spaceAge.js";
 
 $(document).ready(function() {
   $('#form').submit(function(event) {
-    debugger;
     event.preventDefault();
     let age = new Age($('#ageInput').val(), $('#expectancy').val());
     let mercury = age.ageMercury();
