@@ -1,3 +1,4 @@
+
 {
   "name": "spaceAge",
   "description": "",
@@ -13,6 +14,7 @@
   ],
   "dependencies": {
     "jquery": "^3.3.1",
-    "bootstrap": "^4.0.0"
+    "bootstrap": "^3.3.7",
+    "moment": "^2.20.1"
   }
 }
